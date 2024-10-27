@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('img/My Photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    padding: 40px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for better text visibility */
+    color: #ffffff;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    color: #ffffff; /* White text color */
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
+.icon,
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+
+.icon {
+    left: 15px;
+}
+
+.eye-icon {
+    right: 15px;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.creator-info {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator-info p {
+    margin: 0 10px;
+}
